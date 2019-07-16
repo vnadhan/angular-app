@@ -1,0 +1,19 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "teachspacemongodb": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "teachspace-db",
+    "username": "",
+    "password": "",
+    "name": "teachspacemongodb",
+    "connector": "mongodb"
+  },
+  "transient": {
+    "name": "transient",
+    "connector": "transient"
+  }
+}

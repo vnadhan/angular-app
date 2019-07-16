@@ -1,0 +1,28 @@
+{
+  "name": "Catalog",
+  "plural": "catalog",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "thumbnail": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "category": {
+      "type": "hasMany",
+      "model": "Category",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

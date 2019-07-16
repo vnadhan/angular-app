@@ -1,0 +1,53 @@
+<!-- Created on 13/10/2016 by angularboy !-->
+
+<div class="container-fluid" ng-controller="landingController">
+   <section>
+        <div class="row">
+        	<div class="col-md-12">
+        		<img class="container-image img-responsive" src="http://placehold.it/750x450">
+        	</div>
+        </div>
+   </section>
+
+   <section class="even">
+        <div class="heading">
+             <h2>Trending topics</h2>
+             <hr>
+    	     <flex-slider slider-id="carousel2" flex-slide="image in prod.imagePaths track by $index" animation="slide" animation-loop="false" item-width="210" item-margin="5" as-nav-for="#slider" slideshow="false" control-nav="false">
+    	        <li>
+    	          <img ng-src="{{image.thumbnail}}">
+    	        </li>
+    	      </flex-slider>
+    	</div>    
+    </section>  
+
+    <section class="odd">
+        <div class="heading">
+            <h2>Popular Tutors</h2>
+            <hr>
+            <flex-slider slider-id="carousel" flex-slide="image in prod.imagePaths track by $index" animation="slide" animation-loop="false" item-width="210" item-margin="5" as-nav-for="#slider" slideshow="false" control-nav="false">
+            <li>
+              <img ng-src="{{image.thumbnail}}">
+            </li>
+          </flex-slider>
+        </div>
+    </section>
+
+    <section class="even">
+        <div class="heading">
+            <h2 class="text-center">Features</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <img class="feature-images" src="http://placehold.it/750x450" alt="feature" />
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <img src="http://placehold.it/750x450" class="feature-images"  alt="feature" />
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <img src="http://placehold.it/750x450" class="feature-images" alt="feature" />
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

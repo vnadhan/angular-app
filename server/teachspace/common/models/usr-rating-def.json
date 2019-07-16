@@ -1,0 +1,23 @@
+{
+  "name": "Usr_rating_def",
+  "base": "Model",
+  "idInjection": true,
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "rating": {
+      "type": "number",
+      "default": 0
+    },
+    "comments": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

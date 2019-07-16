@@ -1,0 +1,35 @@
+{
+  "name": "Course_rating",
+  "plural": "course_rating",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "course_id": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "unique": true
+    },
+    "rating_score": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "student_rating": {
+      "type": "embedsMany",
+      "model": "Usr_rating_def",
+      "as": "student_ratings",
+      "property": "student_rating",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

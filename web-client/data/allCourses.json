@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Business and Financial Modelling",
+    "description": "Business and Financial Modelling",
+    "start_date": "2016-05-29T00:00:00.000Z",
+    "thumbnail": "../../course.png",
+    "tags": [
+      "Business",
+      "Finance"
+    ],
+    "id": "57fa3806776b7a6c16d0f3f2",
+    "authorId": "david.g@gmail.com",
+    "course_rating": {
+      "course_id": "57fa3806776b7a6c16d0f3f2",
+      "rating_score": 4
+    },
+    "author": {
+      "thumbnail": "../../user.png",
+      "fname": "David",
+      "lname": "G",
+      "email": "david.g@gmail.com"
+    }
+  },
+  {
+    "title": "Business and Marketing",
+    "description": "Business and Marketing",
+    "start_date": "2016-05-29T00:00:00.000Z",
+    "thumbnail": "../../course.png",
+    "tags": [
+      "Business",
+      "Marketing"
+    ],
+    "id": "57fa3806776b7a6c16d0f3f3",
+    "authorId": "tom.l@gmail.com",
+    "course_rating": {
+      "course_id": "57fa3806776b7a6c16d0f3f3",
+      "rating_score": 4
+    },
+    "author": {
+      "thumbnail": "../../user.png",
+      "fname": "Tom",
+      "lname": "L",
+      "email": "tom.l@gmail.com"
+    }
+  }
+]

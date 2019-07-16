@@ -1,0 +1,56 @@
+[
+  {
+    "code": "Business001",
+    "title": "Business and Financial Modelling",
+    "description": "Business and Financial Modelling",
+    "start_date": "2016-05-29T00:00:00.000Z",
+    "thumbnail": "../../course.png",
+    "tags": [
+      "Business",
+      "Finance"
+    ],
+    "id": "57fa3806776b7a6c16d0f3f2",
+    "authorId": "david.g@gmail.com",
+    "_faq": [
+      {
+        "ques": "What is the refund policy?",
+        "ans": "You are eligible for a refund until two weeks after your payment date, or until two weeks after the course or Specialization launches on the platform, whichever is later. You are not eligible for a refund after earning a Course Certificate, even if you complete a course within the two-week period."
+      },
+      {
+        "ques": "Is financial aid available?",
+        "ans": "Yes, we provides financial aid to learners who cannot afford the fee."
+      }
+    ],
+    "_fee": {
+      "amount": "1000",
+      "currency": "USD"
+    },
+    "course_rating": {
+      "course_id": "57fa3806776b7a6c16d0f3f2",
+      "rating_score": 4,
+      "_student_rating": [
+        {
+          "user_id": "tanmay.a@gmail.com",
+          "rating": 3,
+          "comments": "Good"
+        },
+        {
+          "user_id": "shriya.s@gmail.com",
+          "rating": 2,
+          "comments": "Average"
+        },
+        {
+          "user_id": "ankit.s@gmail.com",
+          "rating": 3,
+          "comments": "Ok"
+        }
+      ]
+    },
+    "author": {
+      "thumbnail": "../../user.png",
+      "fname": "David",
+      "lname": "G",
+      "email": "david.g@gmail.com"
+    }
+  }
+]

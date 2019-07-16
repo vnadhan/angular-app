@@ -1,0 +1,17 @@
+{
+  "name": "Fee",
+  "base": "Model",
+  "idInjection": false,
+  "properties": {
+    "amount": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

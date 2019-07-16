@@ -1,0 +1,1 @@
+Client side project for Teachspace powered by AngularJS, Bootstrap.

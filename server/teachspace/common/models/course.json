@@ -1,0 +1,98 @@
+{
+  "name": "Course",
+  "plural": "course",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "code": {
+      "type": "string",
+      "generated": false,
+      "required": true,
+      "index": {
+        "unique": true
+      }
+    },
+    "active" : {
+        "type" : "boolean",
+        "default" : "false"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "language": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "introvideo": {
+      "type": "string"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "Usr",
+      "foreignKey": "",
+      "primaryKey": "email"
+    },
+    "usrs": {
+      "type": "hasMany",
+      "model": "Usr",
+      "foreignKey": "courseId",
+      "through": "Usr_course"
+    },
+    "course_rating": {
+      "type": "hasOne",
+      "model": "Course_rating",
+      "foreignKey": "course_id"
+    },
+    "categories": {
+      "type": "hasAndBelongsToMany",
+      "model": "Category",
+      "foreignKey": ""
+    },
+    "faq": {
+      "type": "embedsMany",
+      "model": "Faq",
+      "as": "faq",
+      "property": "faq",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
+    "fee": {
+      "type": "embedsOne",
+      "model": "Fee",
+      "as": "fee",
+      "property": "fee",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

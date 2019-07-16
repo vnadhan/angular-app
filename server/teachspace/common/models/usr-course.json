@@ -1,0 +1,28 @@
+{
+  "name": "Usr_course",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "course_date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "usrs": {
+      "type": "belongsTo",
+      "model": "Usr",
+      "foreignKey": "usrId"
+    },
+    "courses": {
+      "type": "belongsTo",
+      "model": "Course",
+      "foreignKey": "courseId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

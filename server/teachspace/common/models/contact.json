@@ -1,0 +1,17 @@
+{
+  "name": "Contact",
+  "base": "Model",
+  "idInjection": true,
+  "properties": {
+    "number": {
+      "type": "number"
+    },
+    "countrycode": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

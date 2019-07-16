@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="no-js"> <!--<![endif]-->
+<head>
+
+    <!-- Meta-Information -->
+    <title>ACME Inc.</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="ACME Inc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
+    <link rel="stylesheet" href="assets/libs/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link href="assets/libs/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/flexslider/2.2.2/flexslider.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Our Website CSS Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- jQuery slider -->
+
+   
+</head>
+<body ng-app="tsApp">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Our Website Content Goes Here -->
+<div ng-include='"components/directives/header.html"'></div>
+<div ng-view></div>
+<div ng-include='"components/directives/footer.html"'></div>
+
+<!-- ToDo : compile all vendor scripts to frameworks.min.js to main/ -->
+<!-- Vendor: Javascripts -->
+<script src="assets/libs/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="assets/libs/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Vendor: Angular, followed by our custom Javascripts -->
+<script src="assets/libs/bower_components/angular/angular.min.js"></script>
+<script src="assets/libs/bower_components/angular-route/angular-route.min.js"></script>
+<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script> 
+<script src="//cdn.jsdelivr.net/flexslider/2.2.2/jquery.flexslider-min.js"></script>
+<script src="//cdn.jsdelivr.net/flexslider/2.2.2/jquery.flexslider.js"></script>
+<script src="angularslider/angular-flexslider.js"></script>
+<!-- Our Website Javascripts -->
+<!-- Main -->
+<!-- ToDo : compile all application scripts to app.min.js to main/ -->
+<script src="main/app.js"></script>
+<script src="main/appController.js"></script>
+<script src="main/appService.js"></script>
+
+
+
+<!-- Routes -->
+<script src="main/router.js"></script>
+
+<!-- Controllers  -->
+<script src="assets/js/BlogCtrl.js"></script>
+<script src="assets/js/PageCtrl.js"></script>
+<script src="components/partials/landing/landing.js"></script>
+<script src="components/partials/landing/landing.service.js"></script>
+<script src="components/partials/landing/landing.controller.js"></script>
+<script src="components/partials/landing/landingImage.directive.js"></script>
+
+
+<!-- Services -->
+
+</body>
+</html>

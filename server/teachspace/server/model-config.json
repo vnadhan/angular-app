@@ -1,0 +1,80 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "teachspacemongodb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "teachspacemongodb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "teachspacemongodb",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "teachspacemongodb",
+    "public": false
+  },
+  "Usr": {
+    "dataSource": "teachspacemongodb",
+    "public": true
+  },
+  "Catalog": {
+    "dataSource": "teachspacemongodb",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "teachspacemongodb",
+    "public": true
+  },
+  "Usr_rating": {
+    "dataSource": "teachspacemongodb",
+    "public": true
+  },
+  "Course_rating": {
+    "dataSource": "teachspacemongodb",
+    "public": true
+  },
+  "Course": {
+    "dataSource": "teachspacemongodb",
+    "public": true
+  },
+  "Usr_course": {
+    "dataSource": "teachspacemongodb",
+    "public": true
+  },
+  "Usr_rating_def": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "Faq": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "Fee": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "Contact": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "Usr_pref": {
+    "dataSource": "teachspacemongodb",
+    "public": false
+  }
+}

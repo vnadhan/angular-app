@@ -1,0 +1,114 @@
+{
+  "name": "Usr",
+  "plural": "usr",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "hidden": [
+    "status",
+    "challenges",
+    "credentials",
+    "realm",
+    "username",
+    "watchlist"
+  ],
+  "properties": {
+    "thumbnail": {
+      "type": "string"
+    },
+    "fname": {
+      "type": "string",
+      "required": true
+    },
+    "lname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "generated": false,
+      "required": true,
+      "index": {
+        "unique": true
+      }
+    },
+    "role": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "language": {
+      "type": [
+        "string"
+      ],
+      "required": false
+    },
+    "watchlist": {
+      "type": {
+        "course": [
+          "string"
+        ],
+        "user": [
+          "string"
+        ]
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "courses": {
+      "type": "hasMany",
+      "model": "Course",
+      "foreignKey": "usrId",
+      "through": "Usr_course"
+    },
+    "usr_rating": {
+      "type": "hasOne",
+      "model": "Usr_rating",
+      "foreignKey": "user_id"
+    },
+    "contact": {
+      "type": "embedsOne",
+      "model": "Contact",
+      "as": "contact",
+      "property": "contact",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "*"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "*"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "*"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "*"
+    }
+  ],
+  "methods": {}
+}
